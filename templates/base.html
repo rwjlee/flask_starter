@@ -14,12 +14,11 @@
 
   </head>
   
-  <body>
+  <body class>
 
-
-    <div class="container">
-      {% block body %} {% endblock %}
-    </div>
+    {% include 'navbar.html' %}
+    
+    {% block body %} {% endblock %}
 
     <!-- Required JavaScript Files -->
     <script src="{{url_for('static', filename='lib/jquery-3.2.1.min.js')}}"></script>
